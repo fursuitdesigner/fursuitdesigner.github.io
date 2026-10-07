@@ -21,6 +21,7 @@
       color: var(--text);
       display: flex;
       height: 100vh;
+      height: 100dvh; /* iPad/手機 Safari：100vh 包含收埋嘅工具列，會令底部被裁走；dvh 先係實際可見高度 */
       overflow: hidden;
     }
     aside {
@@ -31,6 +32,7 @@
       display: flex;
       flex-direction: column;
       height: 100vh;
+      height: 100dvh;
     }
     .scroll { flex: 1; overflow-y: auto; padding: 18px; }
     h1 { font-size: 1.25rem; margin: 0 0 4px; }
